@@ -139,7 +139,7 @@ weight: 5
 
                 <h3>Background</h3>
                 <p>This is what the health insurance landscape looks like in Virginia for low-income people without employer-based insurance.</p>
-                <a href="/img/coverage-chart.svg"><img src="/img/coverage-chart.svg"></a>
+                <a href="{{ site.baseurl }}/img/coverage-chart.svg"><img src="{{ site.baseurl }}/img/coverage-chart.svg"></a>
                 <p>Because Virginia did not expand Medicaid under the Affordable Care Act, people with incomes in the blank area above still don’t have affordable insurance options, and some who qualify for subsidized marketplace plans still find the cost out of reach. Richmond also has a significant number of undocumented immigrants who aren’t eligible for any of the options above.</p>
 
                 <p>Richmond's network of low-cost clinics and care programs do great work caring for patients without insurance. But both patients and providers told us that the time and effort required to get an appointment discourages many people from using those services. Funding and clinical capacity are certainly part of the reason for wait times, but we also heard that the application process itself was often slow and frustrating for everyone involved. In order to focus limited resources on those who need it most, the application process at almost all safety net providers includes an eligibility screening that determines whether a patient meets the criteria for free or discounted care (the exception is Care-A-Van, a Bon Secours mobile clinic program). Often, the organization’s funders shape the eligibility criteria and conduct audits, so it’s important to document the decision.</p>
@@ -155,9 +155,9 @@ weight: 5
                 <p><strong>How does the screening process work?</strong></p>
 
                 <p><strong>It can be slow and confusing</strong>. No two organizations screen in exactly the same way, but the process at a primary care clinic might look like this (click image for larger version):</p>
-                <a href="/img/april-comic-full.png">
-                    <img class="half" src="/img/april-comic-1.png">
-                    <img class="half" src="/img/april-comic-2.png">
+                <a href="{{ site.baseurl }}/img/april-comic-full.png">
+                    <img class="half" src="{{ site.baseurl }}/img/april-comic-1.png">
+                    <img class="half" src="{{ site.baseurl }}/img/april-comic-2.png">
                 </a>
 
                 <p><strong>It’s redundant</strong>. If patients visit another provider, they usually have to go through a separate screening, even though the applications ask for most of the same information. A few providers share a form, but most don’t. The following diagram illustrates one path a patient might take.</p>
@@ -180,17 +180,17 @@ weight: 5
                 <h2>Progress</h2>
                 <p>Over the past few months, we built a prototype web application and started testing it with potential users in Richmond. This is what it looks like.</p>
                 <p><strong>Online applications</strong>: Patients often start an application at a clinic but don’t have all the necessary documentation, so they have to return to the office another day--not always easy with limited transportation options. Our program has patient profiles containing the questions currently found on the paper application forms, and allows users to upload images of income proof documents like pay stubs. If all this information is filled out, it could replace the paper application for a patient. Ideally, patients could fill out their entire application at home or with a social worker or community health worker, and go to the office only for medical appointments.</p>
-                <img src="/img/rva-screener-beta_viewpatient_sherri.gif">
+                <img src="{{ site.baseurl }}/img/rva-screener-beta_viewpatient_sherri.gif">
                 <p><strong>Share screening data</strong>: Right now, patients who need care from more than one organization usually have to start the eligibility screening process from scratch at each one. Our application allows organizations to share a patient’s information so that she doesn’t have to provide it again. Initially, a patient’s information is only available to users at the organization that created the profile, but if that organization wants to refer the patient somewhere else, they can use this feature to make the profile available to the appropriate users.</p>
-                <img src="/img/rva-screener-beta_share.gif">
+                <img src="{{ site.baseurl }}/img/rva-screener-beta_share.gif">
                 <p>What happens if a community health worker creates a record for a patient at one of the resource centers in the public housing communities, and the patient later shows up at a clinic, but without an explicit referral from the resource center? The clinic could contact the resource center and ask them to share the patient’s information, but that could take a while. This feature allows a clinic user to look up the patient by name and date of birth, but hides the rest of the patient’s information until the user confirms that she has the patient’s consent. After providing confirmation, the user can immediately access the information.</p>
-                <img src="/img/rva-screener-beta_findpatient.gif">
+                <img src="{{ site.baseurl }}/img/rva-screener-beta_findpatient.gif">
                 <p>Was this address updated last week or two years ago? Who can I contact if I have questions about an application filled out elsewhere? What other organizations have screened this patient? This section tracks changes to each patient’s profile, allowing users to check when each piece of information was added and by whom.</p>
-                <img src="/img/rva-screener-beta_viewhistory.gif">
+                <img src="{{ site.baseurl }}/img/rva-screener-beta_viewhistory.gif">
                 <p><strong>Pre-screening</strong>: Because the process can be so long and frustrating, patients are sometimes reluctant to apply for services when they’re not sure if they’re likely to qualify. On the other hand, providers told us that patients sometimes wait hours for a financial screening, only to find out that they’re not eligible, and the providers spend significant time processing those applications. The pre-screening tool allows patients to answer the most basic eligibility questions and tells them whether they’re likely to qualify. It’s not a definitive answer, but it can help the patient figure out whether it’s worth the time to fill out a complete application, which could be up to 100 questions. We hope this will encourage patients who qualify to apply, and save both patients and providers time by discouraging applications from patients who definitely will not qualify.</p>
-                <img src="/img/rva-screener-beta_prescreener.gif">
+                <img src="{{ site.baseurl }}/img/rva-screener-beta_prescreener.gif">
                 <p><strong>Mobile version</strong>: The application also works on smartphones or tablets, so it can be used outside of offices. For example, community health workers could use it while visiting patients in their homes.</p>
-                <img src="/img/rva-screener-mobile-midyear.gif">
+                <img src="{{ site.baseurl }}/img/rva-screener-mobile-midyear.gif">
                 <p><strong>Universal screening form</strong>: Some service providers in Richmond have been discussing creating a universal screening form for years. This doesn’t necessarily need to be a technical project--simply using the same paper form for all applications would be a huge step forward. It’s challenging to reconcile the different needs and constraints of all the organizations, but we’re hopeful that our project can be a catalyst for more coordination.</p>
             </section>
 
@@ -233,7 +233,7 @@ weight: 5
                 <p><strong>Searchable Services</strong></p>
                 <p>The single most requested tool in our February meetings was an up-to-date, searchable list of all available services for low-income people in Richmond. Because services change so quickly, existing resources like the statewide 211 system tend to have incomplete or out of date information. Some case managers we met curated their own lists, but those are not publicly available.</p>
                 <p>Amber Haley and her team at the Center on Society and Health at VCU maintain a detailed Google Spreadsheet of resources in the city that includes services offered, contact information, and hours of operation. In March, we developed a searchable web-based list of services in Richmond that uses this spreadsheet as the database. This means that when she updates the spreadsheet, it automatically updates the website as well--no need to enter data into a separate system!</p>
-                <img src="/img/searchable-services-example.gif">
+                <img src="{{ site.baseurl }}/img/searchable-services-example.gif">
                 <p>After building this prototype, we decided not to develop it as our main project because of the number of companies and nonprofits already working on this problem. The last thing we wanted to do was create yet another out of date list of resources (<a href="https://xkcd.com/927/" target="_blank">see this comic</a>). Our current role in this project is to help our partners evaluate the existing software options.</p>
 
                 <p><strong>Federal Poverty Level API</strong></p>
